@@ -1,6 +1,6 @@
 use std::{env, path::Path};
 
-const PATH: &str = "/sdcard/Android/data/com.beatgames.beatsaber/files/.env";
+const PATH: &str = "/sdcard/ModData/com.beatgames.beatsaber/.env";
 
 #[no_mangle]
 pub extern "C" fn setup() {
