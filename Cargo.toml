@@ -1,0 +1,18 @@
+[package]
+name = "qenv"
+version = "0.1.0"
+authors = ["Raphaël Thériault <self@raftar.io>"]
+edition = "2018"
+description = "Simple mod to load environment variables from a .env file"
+
+[package.metadata.ndk]
+targets = ["arm64-v8a"]
+platform = 24
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+dotenv = "0.15"
+tracing = "0.1"
+tracing-android = { git = "https://github.com/raftario/tracing-android", default-features = false }
